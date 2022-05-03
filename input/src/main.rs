@@ -21,27 +21,3 @@ fn main() {
         Ordering::Equal => println!("Draw"),
     }
 }
-
-/*
-    時間 = 10
-    時速 = 3
-    秒速 = 4
-
-    あまり時間:             10 % (4 + 3) = 3
-    予定の時間分歩いた回数:   10 / (4 + 3) = 1
-    (4 * 1 * 3) + (3 * 3)
-    (4 * 3) + (3 * 3)
-
-    takahashi = (a * (x / (a + c)) * b) + ((x % (a + c)) * b)
-    aoki = (d * (x / (d + f)) * e) + ((x % (d + f)) * e)
-
-    if takahashi > aoki {
-        println!("Takahashi");
-    } else if takahashi < aoki {
-        println!("Aoki");
-    } else {
-        println!("Drow");
-    }
-
-
-*/
