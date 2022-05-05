@@ -22,7 +22,7 @@ fn various_type() {
     );
 }
 
-const PI: f64 = 3.14; // 定数は明示的な型指定が必要 : 外から参照可能
+// const PI: f64 = 3.14; // 定数は明示的な型指定が必要 : 外から参照可能
 
 fn array() {
     let nums = [1, 2, 3, 4, 5];
@@ -47,7 +47,7 @@ fn make_nothing2() {} // 戻り値は()と推論されている
 fn main() {
     variable();
     various_type();
-    println!("PI is {}", PI);
+    // println!("PI is {}", PI);
     array();
     println!("{}", add_num(1, 2));
 
