@@ -24,6 +24,18 @@ fn test() {
     // println!(a)  // error
 }
 
+fn str_len(s: String) -> usize {
+    s.len()
+}
+
+fn test2() {
+    let s = String::from("hello");
+    let len = str_len(s.clone());
+    println!("{}", len);
+    println!("{}", s);
+}
+
 fn main() {
     test();
+    test2();
 }
