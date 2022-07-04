@@ -1,27 +1,32 @@
-// use proconio::input;
+use proconio::input;
+
+#[allow(non_snake_case)]
+fn main1() {
+    input! {
+        N: i64,
+        A: [i64; N]
+    }
+
+    let ans = A.iter().map(|a| a.trailing_zeros()).min().unwrap();
+    println!("{}", ans);
+}
+
+fn main2() {
+    input! {
+        n: u32,
+        mut a: [u32; n],
+    }
+    let mut ans = 0;
+    loop {
+        if a.iter().any(|&x| x % 2 != 0) {
+            break;
+        }
+        a = a.iter().map(|&x| x / 2).collect();
+        ans += 1;
+    }
+    println!("{}", ans);
+}
 
 fn main() {
-    let n = 100;
-    let mut v: Vec<f64> = Vec::with_capacity(n);
-    for i in 0..n {
-        v.push(std::f64::consts::PI);
-    }
-    // println!("{} {}", v[0], v.len());
-    println!("{:?}", v);
-
-    // // input! {
-    // //     n: usize,
-    // //     l: [usize; n],
-    // // };
-    // let n = 5;
-    // let mut test: Vec<usize>;
-    // for i in 0..n {
-    //     input! {
-    //         n: usize,
-    //         l: [usize; n],
-    //     };
-    //     println!("{}", i);
-    //     test = l;
-    // }
-    // println!("{:?}", test);
+    let mut a = [1, 2, 3];
 }
